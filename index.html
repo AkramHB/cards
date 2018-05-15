@@ -1,0 +1,599 @@
+<html>
+    <head>
+        <title>N</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            
+            .img-to-gray{
+                filter: grayscale(1);
+                transition: all .6s;
+            }
+            
+            .img-to-gray:hover{
+                filter: none;
+                transform: scale(1.05);
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body dir = "rtl">
+        
+        
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: var(--white);">
+
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" style="background-color: #212529;" data-toggle="collapse" data-target="#myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myTogglerNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#" style="font-size: 1.5rem; color: #29386d;">تسجيل</a>
+                        <a class="nav-item nav-link" href="#" style="font-size: 1.5rem; color: #29386d;">معلومات</a>
+                        <a class="nav-item nav-link" href="#" style="font-size: 1.5rem; color: #29386d;">الاستثمار</a>
+                        <a class="nav-item nav-link" href="#" style="font-size: 1.5rem; color: #29386d;">الأجندة</a>
+                        <a class="nav-item nav-link" href="#" style="font-size: 1.5rem; color: #29386d;">متحدثين</a>
+                        <a class="nav-item nav-link" href="#" style="font-size: 1.5rem; color: #29386d;">الرئيسية</a>
+                    </div>
+                </div>
+
+                <div class="navbar-brand d-none d-sm-inline-block" href="#">
+                    <img src="" style="width: 80px" class="img-fluid" alt="logo">
+                </div>
+
+            </div>
+
+        </nav><br><br><br>
+        
+        
+        
+        
+                <div class="carousel slide mt-5" id="featured" data-ride = "carousel">
+    
+                  <div class="carousel-inner">
+
+                      <ol class="carousel-indicators">
+                          <li data-target = "#featured" data-slide-to = "0 active"></li>
+                          <li data-target = "#featured" data-slide-to = "1"></li>
+                          <li data-target = "#featured" data-slide-to = "2"></li>
+                      </ol>
+
+                      <div class = "carousel-item active">
+                          <img class="img-fluid" src="https://images.pexels.com/photos/693267/pexels-photo-693267.jpeg?cs=srgb&dl=blur-blurred-background-breakfast-693267.jpg&fm=jpg" alt="Lifestyle Photo">
+                      </div>
+
+                      <div class = "carousel-item">
+                          <img class="img-fluid" src="https://images.pexels.com/photos/699955/pexels-photo-699955.jpeg?cs=srgb&dl=beach-depth-fun-699955.jpg&fm=jpg" alt="Mission">
+                      </div>
+
+                      <div class = "carousel-item">
+                          <img class="img-fluid" src="https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?cs=srgb&dl=berries-blur-chocolates-918327.jpg&fm=jpg" alt="Vaccinations">
+                      </div>
+
+                      <a class="carousel-control-prev" role="button" href = "#featured" data-slide = "prev"><span class="carousel-control-prev-icon" aria-hidden = "true"><span class = "sr-only">Previous</span></span></a>
+
+                      <a class="carousel-control-next" role="button" href = "#featured" data-slide = "next"><span class="carousel-control-next-icon" aria-hidden = "true"><span class = "sr-only">Previous</span></span></a>
+
+                </div>
+    
+            </div>
+        
+        
+        
+        
+        <div class="container-fluid mt-5 mb-5" style="">
+            <div class = "row no-gutters">
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal" ><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=face-facial-hair-fine-looking-614810.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_1"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal2" ><img src="https://images.pexels.com/photos/34406/pexels-photo.jpg?cs=srgb&dl=apps-iphone-mobile-phone-34406.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_2"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal3" ><img src="https://images.pexels.com/photos/868331/pexels-photo-868331.jpeg?cs=srgb&dl=cellphone-communication-device-868331.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_3"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal4" ><img src="https://images.pexels.com/photos/265658/pexels-photo-265658.jpeg?cs=srgb&dl=apple-computer-devices-265658.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_4"></a></div>
+            </div>
+            <div class = "row no-gutters">
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal5" ><img src="https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?cs=srgb&dl=app-apple-application-58639.jpg&fm=jpgg" class="img-fluid img-to-gray" id = "modal_5"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal6" ><img src="https://images.pexels.com/photos/92903/pexels-photo-92903.jpeg?cs=srgb&dl=apple-devices-cellphone-close-up-92903.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_6"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal7" ><img src="https://images.pexels.com/photos/351073/pexels-photo-351073.jpeg?cs=srgb&dl=accessory-business-cardboard-351073.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_7"></a></div>
+                <div class = "col-sm-6 col-md-3"><a type = "button"  data-toggle = "modal" href = "#servicesmodal8" ><img src="https://images.pexels.com/photos/782687/pexels-photo-782687.jpeg?cs=srgb&dl=apple-devices-blur-camera-782687.jpg&fm=jpg" class="img-fluid img-to-gray" id = "modal_8"></a></div>
+            </div>
+        </div>
+    
+        
+        <div class="icon-bar ssk-sticky ssk-left ssk-center ssk-lg">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="google"><i class="fa fa-google"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class = "modal fade" id="servicesmodal">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=face-facial-hair-fine-looking-614810.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal2">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/34406/pexels-photo.jpg?cs=srgb&dl=apps-iphone-mobile-phone-34406.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal3">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/868331/pexels-photo-868331.jpeg?cs=srgb&dl=cellphone-communication-device-868331.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal4">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/265658/pexels-photo-265658.jpeg?cs=srgb&dl=apple-computer-devices-265658.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal5">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/58639/pexels-photo-58639.jpeg?cs=srgb&dl=app-apple-application-58639.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal6">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/92903/pexels-photo-92903.jpeg?cs=srgb&dl=apple-devices-cellphone-close-up-92903.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal7">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/351073/pexels-photo-351073.jpeg?cs=srgb&dl=accessory-business-cardboard-351073.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+        <div class = "modal fade" id="servicesmodal8">
+    
+            <div class="modal-dialog">
+
+                <div class = "modal-content">
+
+                    <div class="modal-header">
+                            <h5 class = "modal-title"><legend>بياناتك</legend></h5>
+                            <button type="button" class="close ml-0" data-dismiss = "modal" aria-lable = "Close"><span aria-hidden = "true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                              <fieldset class="form-group">
+                                <div class="form-group row">
+                                  <label class = "col-form-label text-md-right col-md-3" for="ownername">الاسم</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control"
+                                        type="text" id="ownername" placeholder="اسمك">
+                                    </div>
+                                </div><!-- form-group -->
+
+                                <div class="form-group row">
+                                  <label class="col-form-label text-md-right col-md-3" for="owneremail">البريد الإلكتروني</label>
+                                  <div class = "col-md-9">
+                                    <input class="form-control"
+                                    type="email" id="owneremail" placeholder="بريدك الإلكتروني">
+                                  </div>
+                                </div><!-- form-group -->
+
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-2">
+                                        <button class="btn btn-primary" type="submit">إرسال</button>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="form-group row justify-content-center">
+                                      <div class="col-3">
+                                        <img src="https://images.pexels.com/photos/782687/pexels-photo-782687.jpeg?cs=srgb&dl=apple-devices-blur-camera-782687.jpg&fm=jpg" class="img-fluid">
+                                      </div>
+                                  </div>
+
+                              </fieldset><!-- fieldset -->
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+        
+
+        
+        
+        
+    </body>
+    
+    <script src="js/index.js"></script>
+    
+</html>
