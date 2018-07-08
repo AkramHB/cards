@@ -49,3 +49,41 @@
     font-size: 30px;
 }
 
+.navbar__color {
+    font-size: 1.5rem; 
+    color: #61676b !important;
+    transition: all .3s ease-in;
+}
+
+.navbar__color:hover {
+    color: #ff893d !important;
+}
+
+.product--info {
+    background: #ff893d;
+    color: #fff; 
+}
+
+.product--button {
+    background: #ffffff;
+    color: #ff893d !important;
+    width: 100%;
+    border: solid 2px #ff893d;
+}
+
+.product--button:hover  {
+    background: #ff893d;
+    color: #ffffff !important;
+    width: 100%;
+}
+
+.img-to-gray{
+    filter: grayscale(1);
+    transition: all .6s;
+}
+
+.img-to-gray:hover{
+    filter: none;
+    transform: scale(1.05);
+}
+
