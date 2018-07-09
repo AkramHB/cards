@@ -79,11 +79,18 @@
 
 .img-to-gray{
     filter: grayscale(1);
+    transform: scale(1);
     transition: all .6s;
 }
 
 .img-to-gray:hover{
     filter: none;
     transform: scale(1.05);
+}
+
+.img-to-scale {
+    filter: none;
+    transform: scale(1.05);
+    transition: all .6s;
 }
 
